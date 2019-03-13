@@ -8,7 +8,7 @@ import ua.lviv.iot.WaterTransport.model.*;
 
 
 
-public abstract class WaterTransportManager implements IWaterTransportManager {
+public  class WaterTransportManager implements IWaterTransportManager {
     private List<WaterTransport> Transport;
 
 
@@ -21,7 +21,7 @@ public abstract class WaterTransportManager implements IWaterTransportManager {
     }
 
 
-    public List<WaterTransport> findForMaxSpeed(List<WaterTransport> transport, transportMaxSpeed transportMaxSpeed) {
+    public List<WaterTransport> findForMaxSpeed(List<WaterTransport> transport,int  transportMaxSpeed ) {
         List<WaterTransport> transportList = transport;
         List<WaterTransport> findForMaxSpeed = transportList.stream()
                 .filter(Transport -> Transport.getTransportMaxSpeed() == transportMaxSpeed).collect(Collectors.toList());
@@ -29,7 +29,7 @@ public abstract class WaterTransportManager implements IWaterTransportManager {
     }
 
 
-    public List<WaterTransport> findForCapacity(List<WaterTransport> transport, transportCapacity transportCapacity) {
+    public List<WaterTransport> findForCapacity(List<WaterTransport> transport,int  transportCapacity) {
         List<WaterTransport> transportList = transport;
         List<WaterTransport> findForCapacity = transportList.stream()
                 .filter(Transport -> Transport.getTransportCapacity() == transportCapacity).collect(Collectors.toList());

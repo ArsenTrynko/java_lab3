@@ -6,8 +6,8 @@ import ua.lviv.iot.WaterTransport.model.WaterTransport;
 
 
     public  interface IWaterTransportManager {
-        public List<WaterTransport> findForblades(List<WaterTransport> transport, NumberOfBlades numberOfBlades);
-        public List<WaterTransport> sortBycapacity(List<WaterTransport> transport, boolean reverse);
+        public List<WaterTransport> findForMaxSpeed(List<WaterTransport> transport, int transportMaxSpeed);
+        public List<WaterTransport>findForCapacity(List<WaterTransport> transport, int  transportCapacity);
 
         public  List<WaterTransport> sortByConsuption(List<WaterTransport> Transport,boolean reverse);
 
