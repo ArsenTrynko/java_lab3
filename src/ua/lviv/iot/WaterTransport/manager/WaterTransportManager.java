@@ -9,11 +9,11 @@ import ua.lviv.iot.WaterTransport.model.*;
 
 
 public  class WaterTransportManager implements IWaterTransportManager {
-    private List<WaterTransport> Transport;
+    private List<WaterTransport> waterTransports;
 
 
     public WaterTransportManager(List<WaterTransport> Transport) {
-        this.Transport = Transport;
+        this.waterTransports = Transport;
     }
 
     public WaterTransportManager() {
@@ -22,16 +22,16 @@ public  class WaterTransportManager implements IWaterTransportManager {
 
 
     public List<WaterTransport> findForMaxSpeed(List<WaterTransport> transport,int  transportMaxSpeed ) {
-        List<WaterTransport> transportList = transport;
-        List<WaterTransport> findForMaxSpeed = transportList.stream()
+
+        List<WaterTransport> findForMaxSpeed = waterTransports.stream()
                 .filter(Transport -> Transport.getTransportMaxSpeed() == transportMaxSpeed).collect(Collectors.toList());
         return findForMaxSpeed;
     }
 
 
     public List<WaterTransport> findForCapacity(List<WaterTransport> transport,int  transportCapacity) {
-        List<WaterTransport> transportList = transport;
-        List<WaterTransport> findForCapacity = transportList.stream()
+
+        List<WaterTransport> findForCapacity = waterTransports.stream()
                 .filter(Transport -> Transport.getTransportCapacity() == transportCapacity).collect(Collectors.toList());
         return findForCapacity;
     }
@@ -50,12 +50,12 @@ public  class WaterTransportManager implements IWaterTransportManager {
         return Transport;
     }
 
-    public List<WaterTransport> getTransport() {
-        return Transport;
+    public List<WaterTransport> getWaterTransports() {
+        return waterTransports;
     }
 
-    public void setTransport(List<WaterTransport> transport) {
-        Transport = transport;
+    public void setWaterTransports(List<WaterTransport> waterTransports) {
+        this.waterTransports = waterTransports;
     }
 }
 
