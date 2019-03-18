@@ -2,7 +2,6 @@ package ua.lviv.iot.WaterTransport.manager;
 
 import java.util.List;
 
-import ua.lviv.iot.WaterTransport.model.NumberOfBlades;
 import ua.lviv.iot.WaterTransport.model.WaterTransport;
 
 
