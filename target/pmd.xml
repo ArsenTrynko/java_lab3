@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2019-04-24T23:47:03.587">
+<file name="C:\Users\MI\IdeaProjects\Lab4\src\main\java\ua\lviv\iot\WaterTransport\manager\WaterTransportManager.java">
+<violation beginline="40" endline="40" begincolumn="50" endcolumn="156" rule="UselessParentheses" ruleset="Code Style" package="ua.lviv.iot.WaterTransport.manager" class="WaterTransportManager" method="sortByConsuption" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\MI\IdeaProjects\Lab4\src\main\java\ua\lviv\iot\WaterTransport\model\AirCushion.java">
+<violation beginline="6" endline="6" begincolumn="23" endcolumn="39" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.WaterTransport.model" class="AirCushion" method="AirCushion" variable="transportCapacity" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused constructor parameters such as 'transportCapacity'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="69" endcolumn="87" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.WaterTransport.model" class="AirCushion" method="AirCushion" variable="transportConsuption" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused constructor parameters such as 'transportConsuption'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="46" endcolumn="62" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.WaterTransport.model" class="AirCushion" method="AirCushion" variable="transportMaxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused constructor parameters such as 'transportMaxSpeed'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="40" rule="UnusedFormalParameter" ruleset="Best Practices" package="ua.lviv.iot.WaterTransport.model" class="AirCushion" method="AirCushion" variable="numberOfBlades" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused constructor parameters such as 'numberOfBlades'.
+</violation>
+</file>
+</pmd>
