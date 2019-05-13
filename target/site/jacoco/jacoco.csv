@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Lab5,ua.lviv.iot.WaterTransport,Main,73,0,0,0,15,0,2,0,2,0
+Lab5,ua.lviv.iot.WaterTransport.manager,WaterTransportManager,18,71,0,6,6,15,3,11,3,8
+Lab5,ua.lviv.iot.WaterTransport.model,WaterTransport,37,21,0,0,8,8,5,4,5,4
+Lab5,ua.lviv.iot.WaterTransport.model,AirCushion,3,6,0,0,2,2,1,1,1,1
+Lab5,ua.lviv.iot.WaterTransport.model,MotorShip,23,9,0,0,6,3,4,1,4,1
+Lab5,ua.lviv.iot.WaterTransport.model,RiverTram,23,9,0,0,6,3,4,1,4,1

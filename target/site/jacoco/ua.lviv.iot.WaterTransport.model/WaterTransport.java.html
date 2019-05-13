@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="uk"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WaterTransport.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab5</a> &gt; <a href="index.source.html" class="el_package">ua.lviv.iot.WaterTransport.model</a> &gt; <span class="el_source">WaterTransport.java</span></div><h1>WaterTransport.java</h1><pre class="source lang-java linenums">package ua.lviv.iot.WaterTransport.model;
+
+public class WaterTransport {
+    private int transportCapacity;
+    private int transportMaxSpeed;
+    private double transportConsuption;
+
+<span class="nc" id="L8">    public WaterTransport() {</span>
+
+<span class="nc" id="L10">    }</span>
+
+    public  WaterTransport(final int transportCapacity, final int transportMaxSpeed, final double transportConsuption) {
+<span class="fc" id="L13">        super();</span>
+<span class="fc" id="L14">        this.transportCapacity = transportCapacity;</span>
+<span class="fc" id="L15">        this.transportMaxSpeed = transportMaxSpeed;</span>
+<span class="fc" id="L16">        this.transportConsuption = transportConsuption;</span>
+<span class="fc" id="L17">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L21">        return &quot;WaterTransport{&quot;</span>
+                +
+                &quot;transportCapacity=&quot;
+                + transportCapacity
+                +
+                &quot;, transportMaxSpeed=&quot;
+                + transportMaxSpeed
+                +
+                &quot;, transportConsuption=&quot;
+                + transportConsuption
+                +
+                '}';
+    }
+
+    public final int getTransportCapacity() {
+<span class="fc" id="L36">        return transportCapacity;</span>
+    }
+
+    public  final void setTransportCapacity(final int transportCapacity) {
+<span class="nc" id="L40">        this.transportCapacity = transportCapacity;</span>
+<span class="nc" id="L41">    }</span>
+
+    public final int getTransportMaxSpeed() {
+<span class="fc" id="L44">        return transportMaxSpeed;</span>
+    }
+
+    public final void setTransportMaxSpeed(final int transportMaxSpeed) {
+<span class="nc" id="L48">        this.transportMaxSpeed = transportMaxSpeed; }</span>
+
+    public final double getTransportConsuption() {
+<span class="fc" id="L51">        return transportConsuption;</span>
+    }
+
+    public final void setTransportConsuption(final double transportConsuption) {
+<span class="nc" id="L55">        this.transportConsuption = transportConsuption;</span>
+<span class="nc" id="L56">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

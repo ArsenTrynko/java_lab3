@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="uk"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab5</a> &gt; <a href="index.source.html" class="el_package">ua.lviv.iot.WaterTransport</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package ua.lviv.iot.WaterTransport;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ua.lviv.iot.WaterTransport.manager.WaterTransportManager;
+import ua.lviv.iot.WaterTransport.model.RiverTram;
+import ua.lviv.iot.WaterTransport.model.MotorShip;
+import ua.lviv.iot.WaterTransport.model.AirCushion;
+import ua.lviv.iot.WaterTransport.model.WaterTransport;
+
+
+<span class="nc" id="L13">public class Main {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L16">        WaterTransportManager manager = new WaterTransportManager();</span>
+<span class="nc" id="L17">        AirCushion airCushion = new AirCushion(4, 50, 75, 160);</span>
+<span class="nc" id="L18">        MotorShip motorShip = new MotorShip(150, 55, 230, &quot;disel&quot;);</span>
+<span class="nc" id="L19">        RiverTram riverTram = new RiverTram(110, 40, 70, &quot;green&quot;);</span>
+
+<span class="nc" id="L21">        List&lt;WaterTransport&gt; listTransport = new ArrayList();</span>
+<span class="nc" id="L22">        listTransport.add(airCushion);</span>
+<span class="nc" id="L23">        listTransport.add(motorShip);</span>
+<span class="nc" id="L24">        listTransport.add(riverTram);</span>
+
+<span class="nc" id="L26">        System.out.println(manager.findForCapacity(listTransport, 50));</span>
+<span class="nc" id="L27">        System.out.println(&quot;\n&quot;);</span>
+<span class="nc" id="L28">        System.out.println(manager.findForMaxSpeed(listTransport, 200));</span>
+<span class="nc" id="L29">        System.out.println(&quot;\n&quot;);</span>
+<span class="nc" id="L30">        System.out.println(manager.sortByConsuption(listTransport, true).toString());</span>
+
+<span class="nc" id="L32">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

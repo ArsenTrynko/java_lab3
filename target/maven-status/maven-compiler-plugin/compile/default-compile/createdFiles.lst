@@ -1,0 +1,7 @@
+ua\lviv\iot\WaterTransport\model\WaterTransport.class
+ua\lviv\iot\WaterTransport\model\MotorShip.class
+ua\lviv\iot\WaterTransport\manager\IWaterTransportManager.class
+ua\lviv\iot\WaterTransport\manager\WaterTransportManager.class
+ua\lviv\iot\WaterTransport\model\AirCushion.class
+ua\lviv\iot\WaterTransport\Main.class
+ua\lviv\iot\WaterTransport\model\RiverTram.class
